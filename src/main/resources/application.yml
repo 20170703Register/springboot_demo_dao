@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    # 其他选择：com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.1:3306/database
+    username: root
+    password: 123456
+
+mybatis:
+  # type-aliases-package配置使用后，resultType可以不使用全类路径，如：<select resultType="UserInfo">,
+  # type-aliases-package: com.example.domain
+
+  # 指定***Mapper.xml文件的地址：
+  mapper-locations: classpath:mapper/*Mapper.xml
